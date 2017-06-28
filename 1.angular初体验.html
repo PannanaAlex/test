@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="lib/angular.min.js"></script>
+	</head>
+	<body ng-controller="ctrl">
+		<div>
+			{{msg}}
+		</div>
+	</body>
+	<script>
+		var app = angular.module("myApp",[]);
+		app.controller("ctrl",function($scope){
+			$scope.msg="helloworld"
+		})
+	</script>
+</html>
